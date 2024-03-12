@@ -1,21 +1,9 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
-
-
-# ===step one: setup===
-
 # import packages
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-
-# In[78]:
-
-
-# ===step two: loading data===
+# loading data
 
 # create a DataFrame from the scraped spotify key signature data
     # the bracketed numbers after each key signature are the counts of songs in each album in order of release
@@ -34,10 +22,7 @@ df = pd.DataFrame(keys_by_album,index=index_labels)
 print(df)
 
 
-# In[ ]:
-
-
-# ===step three: building the radar chart===
+# building the radar chart
 
 # we will need to repeat all of step three for each album's radar chart
     # the ONLY things you need to change are 'ALBUM' and 'HEX'
@@ -88,11 +73,7 @@ ax.grid(color='#ECEDEF')
     # change the color of the outermost gridline (the spine)
 ax.spines['polar'].set_color('#222222')
 
-
-# In[117]:
-
-
-# ===debut radar chart===
+# debut radar chart
 
 # the attributes we will plot in the radar chart (keys)
 labels = ['C','F','Bb','Eb','Ab','Db','Ebm','Bbm','Fm','Cm','Gm','Dm','Am','Em','Bm','Gbm','Dbm','Abm','Gb','B','E','A','D','G']
@@ -141,10 +122,7 @@ ax.grid(color='#ECEDEF')
 ax.spines['polar'].set_color('#222222')
 
 
-# In[116]:
-
-
-# ===fearless radar chart===
+# fearless radar chart
 
 # the attributes we will plot in the radar chart (keys)
 labels = ['C','F','Bb','Eb','Ab','Db','Ebm','Bbm','Fm','Cm','Gm','Dm','Am','Em','Bm','Gbm','Dbm','Abm','Gb','B','E','A','D','G']
@@ -193,10 +171,7 @@ ax.grid(color='#ECEDEF')
 ax.spines['polar'].set_color('#222222')
 
 
-# In[115]:
-
-
-# ===speak now radar chart===
+# speak now radar chart
 
 # we will need to repeat all of step three for each album's radar chart
     # the ONLY things you need to change are 'ALBUM' and the two instances of 'HEX'
@@ -248,10 +223,7 @@ ax.grid(color='#ECEDEF')
 ax.spines['polar'].set_color('#222222')
 
 
-# In[114]:
-
-
-# ===red radar chart===
+# red radar chart
 
 # we will need to repeat all of step three for each album's radar chart
     # the ONLY things you need to change are 'ALBUM' and the two instances of 'HEX'
@@ -303,10 +275,7 @@ ax.grid(color='#ECEDEF')
 ax.spines['polar'].set_color('#222222')
 
 
-# In[113]:
-
-
-# ===1989 radar chart===
+# 1989 radar chart
 
 # we will need to repeat all of step three for each album's radar chart
     # the ONLY things you need to change are 'ALBUM' and the two instances of 'HEX'
@@ -358,10 +327,7 @@ ax.grid(color='#ECEDEF')
 ax.spines['polar'].set_color('#222222')
 
 
-# In[112]:
-
-
-# ===reputation radar chart===
+# reputation radar chart
 
 # we will need to repeat all of step three for each album's radar chart
     # the ONLY things you need to change are 'ALBUM' and the two instances of 'HEX'
@@ -413,10 +379,7 @@ ax.grid(color='#ECEDEF')
 ax.spines['polar'].set_color('#222222')
 
 
-# In[111]:
-
-
-# ===lover radar chart===
+# lover radar chart
 
 # we will need to repeat all of step three for each album's radar chart
     # the ONLY things you need to change are 'ALBUM' and the two instances of 'HEX'
@@ -468,10 +431,7 @@ ax.grid(color='#ECEDEF')
 ax.spines['polar'].set_color('#222222')
 
 
-# In[110]:
-
-
-# ===folklore radar chart===
+# folklore radar chart
 
 # we will need to repeat all of step three for each album's radar chart
     # the ONLY things you need to change are 'ALBUM' and the two instances of 'HEX'
@@ -523,10 +483,7 @@ ax.grid(color='#ECEDEF')
 ax.spines['polar'].set_color('#222222')
 
 
-# In[109]:
-
-
-# ===evermore radar chart===
+# evermore radar chart
 
 # we will need to repeat all of step three for each album's radar chart
     # the ONLY things you need to change are 'ALBUM' and the two instances of 'HEX'
@@ -578,13 +535,7 @@ ax.grid(color='#ECEDEF')
 ax.spines['polar'].set_color('#222222')
 
 
-# In[108]:
-
-
-# ===midnights radar chart===
-
-# we will need to repeat all of step three for each album's radar chart
-    # the ONLY things you need to change are 'ALBUM' and the two instances of 'HEX'
+# midnights radar chart
 
 # the attributes we will plot in the radar chart (keys)
 labels = ['C','F','Bb','Eb','Ab','Db','Ebm','Bbm','Fm','Cm','Gm','Dm','Am','Em','Bm','Gbm','Dbm','Abm','Gb','B','E','A','D','G']
@@ -633,10 +584,7 @@ ax.grid(color='#ECEDEF')
 ax.spines['polar'].set_color('#222222')
 
 
-# In[106]:
-
-
-# ===blank radar chart (FOR AUDREY ONLY)===
+blank radar chart (FOR AUDREY ONLY)
 
 # we will need to repeat all of step three for each album's radar chart
     # the ONLY things you need to change are 'ALBUM' and the two instances of 'HEX'
